@@ -1,8 +1,8 @@
 package p1.myshop.dao;
 
-import p1.myshop.entities.Dvd;
-import p1.myshop.entities.ItemId;
+import p1.myshop.catalog.Dvd;
+import p1.myshop.catalog.ArticleId;
 
 public interface DvdDAO {
-    Dvd find(ItemId itemId);
+    Dvd find(ArticleId itemId);
 }

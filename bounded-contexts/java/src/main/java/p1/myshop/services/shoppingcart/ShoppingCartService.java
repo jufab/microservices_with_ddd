@@ -1,6 +1,8 @@
 package p1.myshop.services.shoppingcart;
 
-import p1.myshop.entities.*;
+import p1.myshop.catalog.Article;
+import p1.myshop.shoppingcart.Cart;
+import p1.myshop.shoppingcart.User;
 
 import java.util.Collections;
 
@@ -11,8 +13,8 @@ public class ShoppingCartService {
         return new Cart(user, Collections.emptyList());
     }
 
-    public void addItem(Cart cart, Item item) {
-        cart.appendItem(item);
+    public void addItem(Cart cart, Article article) {
+        cart.appendItem(article);
     }
 
 }

@@ -1,17 +1,19 @@
-package p1.myshop.entities;
+package p1.myshop.shoppingcart;
+
+import p1.myshop.catalog.ArticleId;
 
 import java.util.Objects;
 
 public class CartItem {
-    public final ItemId itemId;
+    public final ArticleId itemId;
     public final Quantity quantity;
 
-    public CartItem(ItemId itemId, Quantity quantity) {
+    public CartItem(ArticleId itemId, Quantity quantity) {
         this.itemId = itemId;
         this.quantity = quantity;
     }
 
-    public ItemId itemId() {
+    public ArticleId itemId() {
         return itemId;
     }
 

@@ -1,9 +1,9 @@
 package p1.myshop.services.shipping;
 
-import p1.myshop.entities.HasWeight;
 import p1.myshop.services.catalog.CatalogService;
-import p1.myshop.entities.Cart;
-import p1.myshop.entities.CartItem;
+import p1.myshop.shipping.HasWeight;
+import p1.myshop.shoppingcart.Cart;
+import p1.myshop.shoppingcart.CartItem;
 
 public class DeliveryService {
     private final CatalogService catalogService;

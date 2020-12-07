@@ -1,22 +1,21 @@
 package p1.myshop.services.catalog;
 
+import p1.myshop.catalog.Article;
+import p1.myshop.catalog.ArticleId;
 import p1.myshop.dao.BookDAO;
 import p1.myshop.dao.DvdDAO;
-import p1.myshop.entities.Item;
-import p1.myshop.entities.ItemId;
 
 public class CatalogService {
     private BookDAO bookDao;
     private DvdDAO dvdDao;
 
-    public Item loadItem(ItemId itemId) {
-        Item item1 = bookDao.find(itemId);
-        Item item2 = dvdDao.find(itemId);
+    public Article loadItem(ArticleId articleId) {
+        Article article1 = bookDao.find(articleId);
+        Article article2 = dvdDao.find(articleId);
 
-        if (item1 == null) {
-            return item2;
+        if (article1 == null) {
+            return article2;
         }
-
-        return item1;
+        return article1;
     }
 }

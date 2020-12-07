@@ -1,4 +1,6 @@
-package p1.myshop.entities;
+package p1.myshop.shoppingcart;
+
+import p1.myshop.catalog.Article;
 
 import java.util.List;
 
@@ -16,7 +18,7 @@ public class Cart {
         return items;
     }
 
-    public void appendItem(Item item) {
+    public void appendItem(Article article) {
         // TODO add new item or increment quantity
     }
 }
