@@ -1,4 +1,4 @@
-package p1.myshop.services.catalog;
+package p1.myshop.catalog;
 
 import p1.myshop.catalog.Article;
 import p1.myshop.catalog.ArticleId;

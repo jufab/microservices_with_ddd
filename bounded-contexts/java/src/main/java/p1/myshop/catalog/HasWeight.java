@@ -1,4 +1,4 @@
-package p1.myshop.shipping;
+package p1.myshop.catalog;
 
 public interface HasWeight {
     double weight();

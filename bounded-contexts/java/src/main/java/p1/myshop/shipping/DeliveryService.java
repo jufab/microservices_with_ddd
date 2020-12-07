@@ -1,7 +1,7 @@
-package p1.myshop.services.shipping;
+package p1.myshop.shipping;
 
-import p1.myshop.services.catalog.CatalogService;
-import p1.myshop.shipping.HasWeight;
+import p1.myshop.catalog.HasWeight;
+import p1.myshop.catalog.CatalogService;
 import p1.myshop.shoppingcart.Cart;
 import p1.myshop.shoppingcart.CartItem;
 
